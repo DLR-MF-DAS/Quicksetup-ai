@@ -277,7 +277,21 @@ For instace, you can look at the state of other branches from the web interface 
 
 It's now time to make a **pull request**. This is actually a request to merge your branch into the main project branch. While there seems to be a way to do it from the command line most people probably use a corresponding function from the web interface of GitHub. Click on *branches*:
 
-Thus click on *...* and select *New pull request*:
+![branches](imgs/branches.png)
+
+Thus click on "*...*" and select *New pull request*:
+
+
+![pull-request](imgs/pull-request.png)
+
+
+Other project members can review and comment on your pull requests. Reviewers can be assigned whose clearance must be obtained before the pull request can be merged. If changes are requested then those requests can be addressed by simply making changes to the branch in question and pushing them to the remote repository from which the pull request was made.
+
+
+
+
+
+
 
 
 
