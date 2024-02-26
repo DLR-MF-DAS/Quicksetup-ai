@@ -190,3 +190,14 @@ def test_main():
 
 Commit and push this modification to your GitHub repo in the usual way, and investigate the execution log:
 
+![Click here](imgs/clickhere.png)
+
+![Log](imgs/log.png)
+
+
+
+
+
+
+
+
