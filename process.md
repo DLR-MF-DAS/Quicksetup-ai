@@ -195,6 +195,35 @@ Commit and push this modification to your GitHub repo in the usual way, and inve
 ![Log](imgs/log.png)
 
 
+### Key components of the GitHub Flow
+
+GitHub Flow is a lightweight, branch-based workflow used for collaborative software development on GitHub. The key components include:
+
+- **Repository:** A storage space where your project and its files are kept, commonly hosted on GitHub.
+
+- **Branch:** A parallel version of a repository, allowing changes to be made without affecting the main or "master" branch.
+
+- **Commit:** A snapshot of changes made to files in a repository, accompanied by a commit message describing the modifications.
+
+- **Merge:** The process of integrating changes from one branch into another, often used to incorporate features or bug fixes into the main branch.
+
+- **Origin:** A shorthand name for the remote repository where your project resides, typically pointing to the repository on GitHub.
+
+- **Remote:** A version of a repository that is hosted on a server, often on platforms like GitHub. "Origin" is a common name for the default remote repository.
+
+**GitHub Flow Process**
+
+1. **Master Branch:** The main branch, often named "master," represents the stable version of the project.
+
+2. **Create a New Branch:** Developers create a new branch when working on a feature or fixing a bug. This keeps changes isolated from the main branch until they're ready.
+
+3. **Commit and Test:** Developers make changes in the new branch, committing snapshots along the way. Testing, including tools like pytest, ensures the changes function as intended.
+
+4. **Merge:** If everything works, the changes are merged back into the master branch. This process helps maintain a clean and stable main branch while allowing for parallel development.
+
+GitHub Flow's simplicity and flexibility make it a popular choice for collaborative development, fostering efficient collaboration among team members.
+
+
 
 
 
