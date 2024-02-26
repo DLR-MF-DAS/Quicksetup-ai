@@ -273,6 +273,11 @@ git push
 **Exercise**: add a new function called *fibonacci* to *src/example_package/example.py*. This takes as input an integer N, such that N > 3, and return a list with the first N numbers belonging to the [Fibonacci series](https://en.wikipedia.org/wiki/Fibonacci_sequence). After defining the function, add at least 2 tests in *tests/test_main.py* which actually assert the behaviour of the *fibonacci* function. When you're done, push all these changes to your branch. Finally, check from the GitHub web interface whether your code built successfully :)
 For instace, you can look at the state of other branches from the web interface switching branches like here:
 
+![Other branch](imgs/other-branch.png)
+
+It's now time to make a **pull request**. This is actually a request to merge your branch into the main project branch. While there seems to be a way to do it from the command line most people probably use a corresponding function from the web interface of GitHub. Click on *branches*:
+
+Thus click on *...* and select *New pull request*:
 
 
 
