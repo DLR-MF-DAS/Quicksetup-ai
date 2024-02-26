@@ -289,10 +289,16 @@ Other project members can review and comment on your pull requests. Reviewers ca
 
 Once everyone is happy, changes can be merged. 
 
+![merge-no-conflict](imgs/merge.png)
+
+When opening a pull request, conflicts may arise: these appear when the same files have been changed in the main branch and in the branch of the pull request:
 
 
 
-Any resulting conflicts will need to be resolved by hand: these arise when the same files have been changed in the main branch and in the branch of the pull request. So let's introduce and then solve some conflicts. 
+
+In this case, conflicts need to be resolved by hand
+
+
 
 
 
