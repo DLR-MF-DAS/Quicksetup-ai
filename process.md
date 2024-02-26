@@ -287,7 +287,12 @@ Thus click on "*...*" and select *New pull request*:
 
 Other project members can review and comment on your pull requests. Reviewers can be assigned whose clearance must be obtained before the pull request can be merged. If changes are requested then those requests can be addressed by simply making changes to the branch in question and pushing them to the remote repository from which the pull request was made.
 
+Once everyone is happy, changes can be merged. 
 
+
+
+
+Any resulting conflicts will need to be resolved by hand: these arise when the same files have been changed in the main branch and in the branch of the pull request. So let's introduce and then solve some conflicts. 
 
 
 
