@@ -293,14 +293,21 @@ Once everyone is happy, changes can be merged.
 
 When opening a pull request, conflicts may arise: these appear when the same files have been changed in the main branch and in the branch of the pull request:
 
+![merge-no-conflict](imgs/conflicts.png)
 
 
+In this case, conflicts need to be resolved by hand:
 
-In this case, conflicts need to be resolved by hand
+![merge-no-conflict](imgs/resolution.png)
 
+In this exemplar case in the above image, you should keep only one version of the *hello_world* function, e.g.:
 
+```
+def hello_world():
+	print("Hello, World!")
+```
 
-
+All other lines in the function must be deleted.
 
 
 
