@@ -270,7 +270,10 @@ And push changes with:
 git push
 ```
 
-**Exercise**: add a new function called *fibonacci* to *src/example_package/example.py*. This takes as input an integer N, such that N > 3, and return a list with the first N numbers belonging to the [Fibonacci series](https://en.wikipedia.org/wiki/Fibonacci_sequence). After defining the function, add at least 2 tests in *tests/test_main.py* which actually assert the behaviour of the *fibonacci* function. When you're done, push all these changes to your branch. Finally, check from the GitHub web interface whether your code built successfully :)
+**Exercise**: add a new function called *fibonacci* to *src/example_package/example.py*. This takes as input an integer N, such that N > 3, and return a list with the first N numbers belonging to the [Fibonacci series](https://en.wikipedia.org/wiki/Fibonacci_sequence). After defining the function, add at least 2 tests in *tests/test_main.py* which actually assert the behaviour of the *fibonacci* function. You can learn more on how to write tests in the [Official pytest documentation](https://docs.pytest.org/en/8.0.x/).
+
+When you're done, push all these changes to your branch. Finally, check from the GitHub web interface whether your code built successfully :)
+
 For instace, you can look at the state of other branches from the web interface switching branches like here:
 
 ![Other branch](imgs/other-branch.png)
@@ -309,9 +312,9 @@ def hello_world():
 
 All other lines in the function must be deleted.
 
+## Documenting your code
 
-
-
+Docstrings are the standard way to document your code in Python: they are multi-line strings that follow the method or class header. THey explain the method, its arguments and help users of your package understand what it does and how to call it. There are standards for how to write them and we recomment the Numpy on.
 
 
 
