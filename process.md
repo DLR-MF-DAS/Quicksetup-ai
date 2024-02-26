@@ -165,4 +165,28 @@ git push
 
 CI/CD stands for Continous Integration/Continous Deployment. CI/CD involves the automated testing, building, and deployment processes integrated directly into a GitHub repository. When a developer makes changes to the Python package's code, GitHub CI/CD automatically triggers a series of actions, including running tests to ensure the code's integrity and functionality. If the tests pass, the CI/CD pipeline proceeds to build the package and, in a Continuous Deployment setup, deploys it to a specified environment. This automated workflow helps catch errors early in development, ensures consistent code quality, and facilitates efficient and reliable delivery of updates to users. For Python packages, GitHub CI/CD is crucial as it streamlines the development lifecycle, reduces manual intervention, and enables swift and reliable delivery of improvements or new features to end-users.
 
-In order to set up CI/CD for our package, let move to our repository webpage on GitHub. Then click "Actions" in the repo header.So *Configure* Python package:
+In order to set up CI/CD for our package, let move to our repository webpage on GitHub. Then click "Actions" in the repo header. So *Configure* Python package:
+
+![GitHub actions](imgs/actions-highlighted.png)
+
+This will create a new directory called .github/workflows in which you will put your CI/CD scripts in YAML format. By default, GitHus is creating *python-package.yml*. Edit this file such that the last line states the following instruction:
+```
+pytest tests/
+```
+We basically said to pytest that everytime we will push code to our repository, all the test contained in the *tests* folder must be completed in order to build the Python package. So, after this modification, just commit this new file via GitHub web by clicking "Commit changes...".
+
+At this point, pull this new commit on your local copy of the repo:
+
+```
+git pull
+```
+
+Now open the file *tests/test_main.py* and let's define a first test that always pass :)
+
+```
+def test_main():
+	assert(True)
+```
+
+Commit and push this modification to your GitHub repo in the usual way, and investigate the execution log:
+
