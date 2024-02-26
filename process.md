@@ -197,33 +197,78 @@ Commit and push this modification to your GitHub repo in the usual way, and inve
 
 ### Key components of the GitHub Flow
 
-GitHub Flow is a lightweight, branch-based workflow used for collaborative software development on GitHub. The key components include:
+In the following you can find a representation of the tipycal GitHub flow associated with changes being made to a software repository.
 
-- **Repository:** A storage space where your project and its files are kept, commonly hosted on GitHub.
+![Log](imgs/GitHub-Flow.png)
 
-- **Branch:** A parallel version of a repository, allowing changes to be made without affecting the main or "master" branch.
+1. *Master Branch:* The main branch, often named "master," represents the stable version of the project.
 
-- **Commit:** A snapshot of changes made to files in a repository, accompanied by a commit message describing the modifications.
+2. *Create a New Branch:* Developers create a new branch when working on a feature or fixing a bug. This keeps changes isolated from the main branch until they're ready.
 
-- **Merge:** The process of integrating changes from one branch into another, often used to incorporate features or bug fixes into the main branch.
+3. *Commit Changes:* Developers make changes in the new branch, committing snapshots along the way.
 
-- **Origin:** A shorthand name for the remote repository where your project resides, typically pointing to the repository on GitHub.
+4. *Pull Request:* Developers open a pull request to propose their changes. This allows team members to review the code and discuss potential modifications.
 
-- **Remote:** A version of a repository that is hosted on a server, often on platforms like GitHub. "Origin" is a common name for the default remote repository.
+5. *Get Feedback:* Team members provide feedback on the proposed changes through discussions within the pull request. This collaborative process ensures the quality and correctness of the code.
 
-**GitHub Flow Process**
+6. *Test Changes:* Developers, including automated testing tools like pytest, thoroughly test the changes to verify functionality and prevent unintended side effects.
 
-1. **Master Branch:** The main branch, often named "master," represents the stable version of the project.
+7. *Merge Branch:* If everything works as intended and the changes are approved, the branch is merged into the master branch. This process helps maintain a clean and stable main branch while allowing for parallel development.
 
-2. **Create a New Branch:** Developers create a new branch when working on a feature or fixing a bug. This keeps changes isolated from the main branch until they're ready.
+Let's follow the GitHub flow for making changes to our repository :)
+Open a terminal from the project root your repo create a new branch:
 
-3. **Commit and Test:** Developers make changes in the new branch, committing snapshots along the way. Testing, including tools like pytest, ensures the changes function as intended.
+```
+git checkout -b branch-name
+```
 
-4. **Merge:** If everything works, the changes are merged back into the master branch. This process helps maintain a clean and stable main branch while allowing for parallel development.
+The -b option **creates** a new branch and switches to it. In general, to switch to an existing branch:
 
-GitHub Flow's simplicity and flexibility make it a popular choice for collaborative development, fostering efficient collaboration among team members.
+```
+git checkout branch-name
+```
+
+Now introduce some change to your project, but pay attention: commits should be relatively small. After each commit your software should still work. Multiple file commits are generally discouraged and a single commit should be able to fit in your own memory. In this example, we will just change the message printed by the hello() function in *src/example_package/example.py*:
+
+```
+def hello():
+	print("Ciao mondo!")
+```
+
+Italian speakers will understand ;)
+
+To look at what changed in your local copy of the repo, you can always type:
+
+```
+git status
+```
+
+Now we are ready to commit our change. From the project root:
+
+```
+git add src/example_package/example.py
+git commit -m 'changed hello function message since I am Italian'
+```
+
+As a rule, commit messages should describe what was changed, where and why.
+When pushing your branch for the first time:
+
+```
+git push --set-upstream origin branch-name
+```
+
+After that you can check which branch you are in with:
 
 
+```
+git branch
+```
+
+And push changes with:
+
+```
+git push
+```
 
 
 
